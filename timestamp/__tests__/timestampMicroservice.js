@@ -1,6 +1,6 @@
-const timestampMicroservice = require('../timestampMicroservice');
+const timestampMicroservice = require('../timestamp');
 
-describe('timestampMicroservice', () => {
+describe('timestamp', () => {
 	it('should return correct unix and natural for unix input', () => {
 		const input = 1450137600;
 		const result = timestampMicroservice(input);
