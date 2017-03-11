@@ -16,5 +16,11 @@ describe('timestamp', () => {
 		expect(result).toEqual(
 			{ "unix": 1450112400, "natural": "December 15, 2015" }
 		)
+	});
+	it('should return null for invalid input', () => {
+		const input = 'lalala';
+		const result = timestampMicroservice(input);
+
+		expect(result).toBe(null)
 	})
 });
