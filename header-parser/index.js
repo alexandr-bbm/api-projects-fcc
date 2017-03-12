@@ -3,7 +3,7 @@ const router = require('express').Router();
 
 router.get(`/`, (req, res) => {
 	const result = {
-		"ipaddress": req.headers['host'],
+		"ipaddress": req.ip,
 		"language": req.headers['accept-language'].split(',')[0],
 		"software": findFirstInsideBrackets(req.headers['user-agent'])
 	};
