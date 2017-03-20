@@ -4,6 +4,7 @@ const app = require('express')();
 const ROUTES = [
 	'timestamp',
 	'header-parser',
+	'url-shortener',
 ];
 
 app.get('/', (req, res) => {
