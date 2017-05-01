@@ -5,6 +5,7 @@ const ROUTES = [
 	'timestamp',
 	'header-parser',
 	'url-shortener',
+	'image-search',
 ];
 
 app.get('/', (req, res) => {
