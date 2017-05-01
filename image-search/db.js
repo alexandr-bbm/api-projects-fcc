@@ -24,7 +24,7 @@ const getSearches = () => new Promise((resolve, reject) => {
   mongo.connect(process.env.MONGOLAB_URI)
     .then(db => {
       db.collection(COLLECTION_NAME)
-        .find({}, { limit: 20 }).toArray((err, docs) => {
+        .find().toArray((err, docs) => {
           if (err) reject(err);
           db.close();
           resolve(docs.reverse());
