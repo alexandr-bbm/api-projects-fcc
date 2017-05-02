@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>File Metadata Microservice</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                File Metadata Microservice
+            </h1>
+            <blockquote>
+                User stories:
+                <ul>I can submit a FormData object that includes a file upload.</ul>
+                <ul>When I submit something, I will receive the file size in bytes within the JSON response</ul>
+            </blockquote>
+            <h3>Implementation</h3>
+            <form
+                action="/file-metadata/get-file-size/"
+                enctype="multipart/form-data"
+                method="post"
+            >
+                <input type="file" name="file" style="margin-bottom: 15px" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

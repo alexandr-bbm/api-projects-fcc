@@ -6,6 +6,7 @@ const ROUTES = [
 	'header-parser',
 	'url-shortener',
 	'image-search',
+	'file-metadata',
 ];
 
 app.get('/', (req, res) => {
